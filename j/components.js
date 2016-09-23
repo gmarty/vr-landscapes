@@ -1,0 +1,1 @@
+AFRAME.registerComponent("slideshow",{schema:{src:{"default":""}},init:function(){var b=this.data.src.split(","),c=document.querySelector("a-sky"),a=0;c.setAttribute("src",b[a]);this.el.addEventListener("mouseup",function(){a++;a%=b.length;c.setAttribute("src",b[a])})}})
